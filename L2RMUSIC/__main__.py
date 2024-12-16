@@ -40,7 +40,7 @@ async def init():
     await userbot.start()
     await Ayush.start()
     try:
-        await Ayush.stream_call("https://te.legra.ph/file/29f784eb49d230ab62e9e.mp4")
+        await Ayush.stream_call("https://files.catbox.moe/22xk9w.mp4")
     except NoActiveGroupCall:
         LOGGER("L2RMUSIC").error(
             "Please turn on the videochat of your log group\channel.\n\nStopping Bot..."
@@ -49,7 +49,7 @@ async def init():
     except:
         pass
     await Ayush.decorators()
-    LOGGER("L2RMUSIC").info("ᴠᴇɴᴏᴍxᴍᴜsɪᴄ ʙᴏᴛ sᴛᴀʀᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ ɴᴏᴡ ᴇɴᴊᴏʏ")
+    LOGGER("L2RMUSIC").info("ᴀsʜɪsʜᴍᴜsɪᴄ ʙᴏᴛ sᴛᴀʀᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ ɴᴏᴡ ᴇɴᴊᴏʏ")
 
     await idle()
     await app.stop()

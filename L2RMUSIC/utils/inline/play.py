@@ -3,7 +3,7 @@ import math
 from config import SUPPORT_CHAT, OWNER_ID
 from pyrogram.types import InlineKeyboardButton
 
-from VenomX.utils.formatters import time_to_seconds
+from L2RMUSIC.utils.formatters import time_to_seconds
 
 
 def track_markup(_, videoid, user_id, channel, fplay):
@@ -63,10 +63,10 @@ def stream_markup_timer(_, chat_id, played, dur):
         bar = "—————————⚚‎"
     buttons = [
         [
-            InlineKeyboardButton(text="❤️‍🔥", callback_data=f"ADMIN Resume|{chat_id}"),
-            InlineKeyboardButton(text="🪼", callback_data=f"ADMIN Pause|{chat_id}"),
-            InlineKeyboardButton(text="🪫", callback_data=f"ADMIN Replay|{chat_id}"),
-            InlineKeyboardButton(text="👻", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="🤍", callback_data=f"ADMIN Resume|{chat_id}"),
+            InlineKeyboardButton(text="❤️", callback_data=f"ADMIN Pause|{chat_id}"),
+            InlineKeyboardButton(text="💔", callback_data=f"ADMIN Replay|{chat_id}"),
+            InlineKeyboardButton(text="👀", callback_data=f"ADMIN Skip|{chat_id}"),
             InlineKeyboardButton(text="♦️", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
         [
@@ -91,10 +91,10 @@ def stream_markup_timer(_, chat_id, played, dur):
 def stream_markup(_, chat_id):
     buttons = [
         [
-            InlineKeyboardButton(text="❤️‍🔥", callback_data=f"ADMIN Resume|{chat_id}"),
-            InlineKeyboardButton(text="🪼", callback_data=f"ADMIN Pause|{chat_id}"),
-            InlineKeyboardButton(text="🪫", callback_data=f"ADMIN Replay|{chat_id}"),
-            InlineKeyboardButton(text="👻", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="🤍", callback_data=f"ADMIN Resume|{chat_id}"),
+            InlineKeyboardButton(text="❤️", callback_data=f"ADMIN Pause|{chat_id}"),
+            InlineKeyboardButton(text="💔", callback_data=f"ADMIN Replay|{chat_id}"),
+            InlineKeyboardButton(text="👀", callback_data=f"ADMIN Skip|{chat_id}"),
             InlineKeyboardButton(text="♦️", callback_data=f"ADMIN Stop|{chat_id}")
             ],
         [
